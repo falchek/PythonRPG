@@ -20,16 +20,23 @@ class Party:
         self.print_horizontal_bar()
 
     def print_horizontal_bar(self):
+        self.get_indent()
         for member in self.party:
             print("-" * 22, end="")
         print()
 
     def print_party_names(self):
+        self.get_indent()
         for member in self.party:
             print("|{:^20}|".format(member.name), end="")
         print()
 
     def print_party_hp(self):
+        self.get_indent()
         for member in self.party:
             print("|{:<20}|".format("HP: "+ str(member.current_hp) + "/"+str(member.max_hp)), end="")
         print()
+
+    # Gets the proper indent for the party
+    def get_indent(self):
+        print(" " * 11 * (4 - len(self.party)), end ="")
