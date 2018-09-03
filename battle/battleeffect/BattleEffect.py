@@ -18,7 +18,6 @@ class BattleEffect:
 class RegularAttack(BattleEffect):
     def __init__(self, source_fighter):
         self.source_fighter = source_fighter
-        self.effect_strategy = 0 #TODO:  create normal attack strategy
         self.effect_type = EffectType.physical
 
     def get_battle_text(self):
@@ -26,3 +25,12 @@ class RegularAttack(BattleEffect):
 
     def calculate_power(self):
         return self.source_fighter.strength * 1 + random.randint(1, 12)
+
+class RunAction(BattleEffect):
+    def __init__(self, source_fighter):
+        self.source_fighter = source_fighter
+        self.effect_type = None
+
+    def get_battle_text(self):
+        return self.source_fighter.name + " tried to run... but couldn't!!"
+        # TODO:  Implement...

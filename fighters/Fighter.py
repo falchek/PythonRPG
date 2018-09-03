@@ -1,17 +1,21 @@
 from battle.battleeffect.BattleEffect import RegularAttack
 from battle.battleeffect.EffectType import EffectType
 from battle.round.RoundAction import RoundAction
-
+import random
+from battle.BattleOption import AttackOption
+from battle.BattleOption import RunOption
 # this represents a generic fighter of any kind.
 
+
 class Fighter:
-    def __init__(self, name, hp, strength, defense):
+    def __init__(self, name, hp, strength, defense, agility):
         self.name = name
         self.current_hp = hp
         self.max_hp = hp
         self.strength = strength
         self.defense = defense
-        self.status = [] # status will be an array of effects, including 'knocked out'
+        self.agility = agility
+
 
     # for now, just create a normal attack
     def create_round_action(self, target_fighter):
@@ -35,4 +39,7 @@ class Fighter:
         if self.current_hp <= 0:
             self.current_hp = 0
             print(self.name + " has fainted!")
+
+    def get_priority_strategy(self):
+        return self.agility # + (self.agility / 10 * random.random(0, 6))
 

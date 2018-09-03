@@ -6,10 +6,17 @@ from fighters.monsters.Kobold import Kobold
 from battle.Battle import Battle
 from battle.Party import Party
 
-party = Party([Mike(),
-         Courtney()])
+party = Party([Mike(), Courtney()])
 
-monsters = Party([Kobold(), Imp(), Kobold()])
+monsters = Party([Kobold(),
+                  Imp(),
+                  Kobold(),
+                  Imp(),
+                  Imp(),
+                  Kobold(),
+                  Imp(),
+                  Kobold(),
+                  Imp(), ])
 
 print("Welcome to le game")
 print("------------------")
