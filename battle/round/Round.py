@@ -5,6 +5,7 @@ class Round:
     def __init__(self, round_actions):
         self.round_actions = round_actions
 
+    # processes the round actions one by one...
     def process_round_actions(self):
         for action in self.round_actions:
             if action.target is None:

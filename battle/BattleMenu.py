@@ -14,6 +14,8 @@ class BattleMenu:
         round_actions = []
         for fighter in self.party.get_actionable_members():
             print(fighter.name + "'s turn!")
+            # TODO:  Get the round options from the Fighter themselves.
+            # You could probably split the responsibility of the option from selecting the target.
             battle_options = [AttackOption(fighter, self.monsters.get_actionable_members()),
                               RunOption(fighter, None)]
             self.show_options(battle_options)
