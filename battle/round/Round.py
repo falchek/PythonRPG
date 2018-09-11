@@ -8,7 +8,7 @@ class Round:
     # processes the round actions one by one...
     def process_round_actions(self):
         for action in self.round_actions:
-            if action.target is None:
+            if action.targets is None:
                 print(action.battle_effect.get_battle_text())
-            elif action.battle_effect.source_fighter.current_hp > 0 and action.target.current_hp > 0:
+            elif action.battle_effect.source_fighter.current_hp > 0:
                 action.apply_battle_effect()

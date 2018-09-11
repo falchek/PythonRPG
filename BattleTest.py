@@ -10,13 +10,7 @@ party = Party([Mike(), Courtney()])
 
 monsters = Party([Kobold(),
                   Imp(),
-                  Kobold(),
-                  Imp(),
-                  Imp(),
-                  Kobold(),
-                  Imp(),
-                  Kobold(),
-                  Imp(), ])
+                  Kobold()])
 
 print("Welcome to le game")
 print("------------------")

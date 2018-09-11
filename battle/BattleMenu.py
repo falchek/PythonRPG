@@ -1,6 +1,7 @@
 from battle.BattleOption import BattleOptions
 from battle.BattleOption import AttackOption
 from battle.BattleOption import RunOption
+from ui.UserInput import UserInput
 # Creates and accepts the input for the party against the monsters.
 
 class BattleMenu:
@@ -19,8 +20,10 @@ class BattleMenu:
             battle_options = [AttackOption(fighter, self.monsters.get_actionable_members()),
                               RunOption(fighter, None)]
             self.show_options(battle_options)
-            selected_action = self.select_action(fighter, battle_options)
-            round_actions.append(selected_action)
+            selected_actions = self.select_action(battle_options)
+            # generate the action from battle effects and an array of selected targets, and add them the the queue
+
+            round_actions.append(selected_actions)
 
         return round_actions
 
@@ -32,15 +35,7 @@ class BattleMenu:
             index += 1
 
 
-    # gets an action
-    def select_action(self, fighter, battle_options):
-        need_option = True
-        while need_option:
-            try:
-                option = int(input("Choose a selection!")) - 1
-                if option in range(0, len(battle_options)):
-                    need_option = False
-                    return battle_options[option].get_action()
-            except ValueError:
-                print("Option needs to be numeric!")
-
+    # gets an action by index
+    def select_action(self, battle_options):
+        index = UserInput().select_index_from_options(battle_options)
+        return battle_options[index].generate_round_actions()

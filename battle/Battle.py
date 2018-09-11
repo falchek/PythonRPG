@@ -61,6 +61,7 @@ class Battle:
             actions.append(action)'''
 
         for monster in self.monsters.get_actionable_members():
-            action = monster.create_round_action(random.choice(self.party.party))
+            random_target = random.choice(self.party.party)
+            action = monster.create_round_action([random_target])
             actions.append(action)
         return actions

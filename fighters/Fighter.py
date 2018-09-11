@@ -19,8 +19,9 @@ class Fighter:
 
     # for now, just create a normal attack
     def create_round_action(self, target_fighter):
-        regular_attack = RegularAttack(self)
-        return RoundAction(regular_attack, target_fighter)
+        action = RegularAttack(self, None)
+        # target = target_fighter
+        return RoundAction(action, target_fighter)
 
     #todo:  Add defensive or healing strategies
     def receive_battle_effect(self, battle_effect):
