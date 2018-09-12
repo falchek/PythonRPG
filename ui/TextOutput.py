@@ -1,4 +1,5 @@
-# print to screen and stuff here.i
+# print to screen and stuff here.
+# all text automatically flushes for ease of debugging
 
 
 class TextOutput:
@@ -6,11 +7,11 @@ class TextOutput:
         return
 
     def show(self, text):
-        print(text)
+        print(text, flush=True)
 
     def line(self, text):
-        print(text, end="")
+        print(text, end="", flush=True)
 
     def targets(self, targets):
         for count, target in enumerate(targets, start=1):
-            print(str(count) + ") " + target.name)
+            print(str(count) + ") " + target.name, flush=True)
