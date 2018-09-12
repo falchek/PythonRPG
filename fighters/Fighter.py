@@ -1,9 +1,9 @@
-from battle.battleeffect.BattleEffect import RegularAttack
+from battle.battleeffect.RegularAttack import RegularAttack
 from battle.battleeffect.EffectType import EffectType
 from battle.round.RoundAction import RoundAction
-import random
-from battle.BattleOption import AttackOption
-from battle.BattleOption import RunOption
+from ui.UI import UI
+
+
 # this represents a generic fighter of any kind.
 
 
@@ -28,7 +28,7 @@ class Fighter:
         if battle_effect.effect_type == EffectType.physical:
             damage = battle_effect.calculate_power() - self.defense
             if damage > 0:
-                print(self.name + " takes " + str(damage) + " damage!!!")
+                UI().show_text(self.name + " takes " + str(damage) + " damage!!!")
                 self.current_hp = self.current_hp - damage
                 self.faint()
             # TODO: apply physical strategy
@@ -39,7 +39,7 @@ class Fighter:
     def faint(self):
         if self.current_hp <= 0:
             self.current_hp = 0
-            print(self.name + " has fainted!")
+            UI().show_text(self.name + " has fainted!")
 
     def get_priority_strategy(self):
         return self.agility # + (self.agility / 10 * random.random(0, 6))

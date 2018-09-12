@@ -1,4 +1,7 @@
+from ui.UI import UI
+
 # represents a party in a battle
+# TODO:  You'll need to do a lot here when it's graphics time, and maybe separate these concerns
 
 class Party:
 
@@ -6,7 +9,7 @@ class Party:
         self.MAX_ROW_SIZE = 4
         self.party = party
 
-    # gets the actionable memebrs who haven't been defeated.
+    # gets the actionable members who haven't been defeated.
     def get_actionable_members(self):
         actionable_members = []
         for member in self.party:
@@ -31,21 +34,21 @@ class Party:
     def print_horizontal_bar(self, row):
         self.get_indent(row)
         for member in row:
-            print("-" * 22, end="")
-        print()
+            UI().show_line("-" * 22)
+        UI().show_text("")
 
     def print_party_names(self, row):
         self.get_indent(row)
         for member in row:
-            print("|{:^20}|".format(member.name), end="")
-        print()
+            UI().show_line("|{:^20}|".format(member.name))
+        UI().show_text("")
 
     def print_party_hp(self, row):
         self.get_indent(row)
         for member in row:
-            print("|{:<20}|".format("HP: "+ str(member.current_hp) + "/"+str(member.max_hp)), end="")
-        print()
+            UI().show_line("|{:<20}|".format("HP: "+ str(member.current_hp) + "/"+str(member.max_hp)))
+        UI().show_text("")
 
     # Gets the proper indent for the party
     def get_indent(self, row):
-        print(" " * 11 * (self.MAX_ROW_SIZE - len(row)), end ="")
+        UI().show_line(" " * 11 * (self.MAX_ROW_SIZE - len(row)))

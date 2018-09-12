@@ -1,7 +1,7 @@
 from battle.round.Round import Round
-from battle.BattleMenu import BattleMenu
-from battle.round.Round import RoundAction
+from battle.battlemenu.BattleMenu import BattleMenu
 from operator import attrgetter
+from ui.UI import UI
 
 import random
 # represents a battle
@@ -19,16 +19,14 @@ class Battle:
 
     #TODO:  Maybe print some fun ascii art later
     def print_field(self):
-        print()
-        print()
-        print()
+        UI().show_text("\n\n\n")
 
     # the main loop for fights
     def fight(self):
         win = False
         lose = False
         while not win | lose:
-            print("New Round!")
+            UI().show_text("New Round!")
             self.print_battlefield()
 
             actions = BattleMenu(self.party, self.monsters).begin_menu_selection()
@@ -43,12 +41,11 @@ class Battle:
             elif len(self.monsters.get_actionable_members()) == 0:
                 win = True
 
-            print()
-            print()
+            UI().show_text("\n\n")
         if win:
-            print("You've won the battle!!")
+            UI().show_text("You've won the battle!!")
         elif lose:
-            print("You've lost the battle...")
+            UI().show_text("You've lost the battle...")
 
     def sort_actions_by_priority(self, actions):
         actions = sorted(actions, key=attrgetter('priority'), reverse=True)

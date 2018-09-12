@@ -1,3 +1,4 @@
+from ui.UI import UI
 # The battleeffect that a fighter is taking in the current round
 
 class RoundAction:
@@ -7,9 +8,8 @@ class RoundAction:
         self.priority = battle_effect.source_fighter.get_priority_strategy()
 
     def apply_battle_effect(self):
-        print(self.battle_effect.get_battle_text())
+        UI().show_text(self.battle_effect.get_battle_text())
         if self.targets is not None:
             for target in self.targets:
                 if target.current_hp > 0:  # test if dead
                     target.receive_battle_effect(self.battle_effect)
-

@@ -1,7 +1,7 @@
-from battle.BattleOption import BattleOptions
-from battle.BattleOption import AttackOption
-from battle.BattleOption import RunOption
+from battle.battlemenu.AttackOption import AttackOption
+from battle.battlemenu.RunOption import RunOption
 from ui.UserInput import UserInput
+from ui.UI import UI
 # Creates and accepts the input for the party against the monsters.
 
 class BattleMenu:
@@ -14,9 +14,8 @@ class BattleMenu:
     def begin_menu_selection(self):
         round_actions = []
         for fighter in self.party.get_actionable_members():
-            print(fighter.name + "'s turn!")
+            UI().show_text(fighter.name + "'s turn!")
             # TODO:  Get the round options from the Fighter themselves.
-            # You could probably split the responsibility of the option from selecting the target.
             battle_options = [AttackOption(fighter, self.monsters.get_actionable_members()),
                               RunOption(fighter, None)]
             self.show_options(battle_options)
@@ -29,11 +28,8 @@ class BattleMenu:
 
     # there is only one option right now:  Attack
     def show_options(self, battle_options):
-        index = 1
-        for option in battle_options:
-            print(str(index) + ") " + option.name)
-            index += 1
-
+        for count, option in enumerate(battle_options, start=1):
+            UI().show_text(str(count) + ") " + option.name)
 
     # gets an action by index
     def select_action(self, battle_options):

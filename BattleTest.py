@@ -12,9 +12,6 @@ monsters = Party([Kobold(),
                   Imp(),
                   Kobold()])
 
-print("Welcome to le game")
-print("------------------")
-
 
 battle = Battle(party, monsters)
 battle.fight()

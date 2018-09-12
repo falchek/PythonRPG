@@ -1,4 +1,6 @@
+from ui.UI import UI
 from battle.round.RoundAction import RoundAction
+
 # Contains the processing for fighters and round actions
 
 class Round:
@@ -9,6 +11,6 @@ class Round:
     def process_round_actions(self):
         for action in self.round_actions:
             if action.targets is None:
-                print(action.battle_effect.get_battle_text())
+                UI().show_text(action.battle_effect.get_battle_text())
             elif action.battle_effect.source_fighter.current_hp > 0:
                 action.apply_battle_effect()
