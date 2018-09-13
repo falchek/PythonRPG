@@ -15,3 +15,7 @@ class TextOutput:
     def targets(self, targets):
         for count, target in enumerate(targets, start=1):
             print(str(count) + ") " + target.name, flush=True)
+
+    def options(self, options):
+        for count, option in enumerate(options, start=1):
+            print("  " + str(count) + ") " + option.name, flush=True)

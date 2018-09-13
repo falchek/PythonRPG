@@ -4,4 +4,4 @@ from fighters.Fighter import Fighter
 
 class Imp(Fighter):
     def __init__(self):
-        super().__init__("Imp", 15, 5, 0, 2)
+        super().__init__("Imp", 15, 5, 0, 2, 3)

@@ -4,5 +4,5 @@ from fighters.Fighter import Fighter
 
 class Mike(Fighter):
     def __init__(self):
-        super().__init__("Mike", 250, 10, 5, 4)
+        super().__init__("Mike", 250, 10, 5, 4, 3)
 

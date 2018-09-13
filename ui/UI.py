@@ -13,5 +13,8 @@ class UI:
     def show_line(self, text):
         TextOutput().line(text)
 
+    def show_options(self, options):
+        TextOutput().options(options)
+
     def list_targets(self, targets):
         TextOutput().targets(targets)

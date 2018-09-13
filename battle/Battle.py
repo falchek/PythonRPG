@@ -2,6 +2,7 @@ from battle.round.Round import Round
 from battle.battlemenu.BattleMenu import BattleMenu
 from operator import attrgetter
 from ui.UI import UI
+from ui.PartyRender import PartyRender
 
 import random
 # represents a battle
@@ -13,11 +14,11 @@ class Battle:
         self.monsters = monsters
 
     def print_battlefield(self):
-        self.monsters.display_party()
+        PartyRender(self.monsters).display_party()
         self.print_field()
-        self.party.display_party()
+        PartyRender(self.party).display_party()
 
-    #TODO:  Maybe print some fun ascii art later
+    #TODO:  Print ascii art dependent on where the battle happens
     def print_field(self):
         UI().show_text("\n\n\n")
 
@@ -29,7 +30,10 @@ class Battle:
             UI().show_text("New Round!")
             self.print_battlefield()
 
-            actions = BattleMenu(self.party, self.monsters).begin_menu_selection()
+            targets = {'ally': self.party.get_actionable_members(),
+                       'enemy': self.monsters.get_actionable_members()}
+
+            actions = BattleMenu(targets).begin_menu_selection()
             actions.extend(self.get_random_monster_actions())
 
             actions = self.sort_actions_by_priority(actions)
@@ -56,6 +60,8 @@ class Battle:
         '''for member in self.party.get_actionable_members():
             action = member.create_round_action(random.choice(self.monsters.party))  # get rand
             actions.append(action)'''
+
+        # TODO: write monster AI.
 
         for monster in self.monsters.get_actionable_members():
             random_target = random.choice(self.party.party)
