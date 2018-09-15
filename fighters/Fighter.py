@@ -28,26 +28,34 @@ class Fighter:
         # target = target_fighter
         return RoundAction(action, target_fighter)
 
-    #todo:  Add defensive or healing strategies
+    #TODO:  clean this up
     def receive_battle_effect(self, battle_effect):
         if battle_effect.effect_type == EffectType.physical:
             damage = battle_effect.calculate_power() - self.defense
             if damage > 0:
-                UI().show_text(self.name + " takes " + str(damage) + " damage!!!")
+                UI().show_text("\t" + self.name + " takes " + str(damage) + " damage!!!")
                 self.current_hp -= damage
                 self.faint()
             # TODO: apply physical strategy
         elif battle_effect.effect_type == EffectType.magical:
             damage = battle_effect.calculate_power() # TODO:  magical damage?  Resistance?
             if damage > 0:
-                UI().show_text(self.name + " takes " + str(damage) + " magical damage!!!")
+                UI().show_text("\t" + self.name + " takes " + str(damage) + " magical damage!!!")
                 self.current_hp -= damage
-            return 0
+            return
+        elif battle_effect.effect_type == EffectType.healing:
+            healing = battle_effect.calculate_power()
+            if healing > 0:
+                UI().show_text("\t" + self.name + " recovers " + str(healing) + " HP!")
+                self.current_hp += healing
+                if self.current_hp > self.max_hp:
+                    self.current_hp = self.max_hp
+        return
 
     def faint(self):
         if self.current_hp <= 0:
             self.current_hp = 0
-            UI().show_text(self.name + " has fainted!")
+            UI().show_text("\t" + self.name + " has fainted!")
 
     def get_priority_strategy(self):
         return self.agility + (self.agility / 10 * random.choice(range(0, 6)))

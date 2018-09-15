@@ -5,11 +5,14 @@ from fighters.monsters.Imp import Imp
 from fighters.monsters.Kobold import Kobold
 from battle.battleeffect.magic.FireballSpell import FireballSpell
 from battle.battleeffect.magic.MeteorSpell import MeteorSpell
+from battle.battleeffect.magic.HealSpell import HealSpell
 from battle.Battle import Battle
 from battle.Party import Party
 
 mike = Mike()
 courtney = Courtney()
+
+mike.spells.append(HealSpell(mike))
 
 courtney.spells = [FireballSpell(courtney),
                    MeteorSpell(courtney)]

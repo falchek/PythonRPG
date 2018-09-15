@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a389056-99d6-4ab2-b8bd-7ccdd0334674" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/battle/battleeffect/magic/FireballSpell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battle/battleeffect/magic/MeteorSpell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battle/battlemenu/MagicOption.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battle/targetselection/AllEnemyTargetSelection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/PartyRender.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/battle/targetselection/SingleAllyTargetSelection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BattleTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/BattleTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle/Battle.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/Battle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle/Party.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/Party.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle/battleeffect/RegularAttack.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/battleeffect/RegularAttack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle/battlemenu/AttackOption.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/battlemenu/AttackOption.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle/battlemenu/BattleMenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/battlemenu/BattleMenu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle/targetselection/SingleEnemyTargetSelection.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/targetselection/SingleEnemyTargetSelection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle/targetselection/TargetSelection.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/targetselection/TargetSelection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/battle/battleeffect/EffectType.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/battleeffect/EffectType.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py" beforeDir="false" afterPath="$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fighters/Fighter.py" beforeDir="false" afterPath="$PROJECT_DIR$/fighters/Fighter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fighters/monsters/Imp.py" beforeDir="false" afterPath="$PROJECT_DIR$/fighters/monsters/Imp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fighters/monsters/Kobold.py" beforeDir="false" afterPath="$PROJECT_DIR$/fighters/monsters/Kobold.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fighters/players/Courtney.py" beforeDir="false" afterPath="$PROJECT_DIR$/fighters/players/Courtney.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fighters/players/Mike.py" beforeDir="false" afterPath="$PROJECT_DIR$/fighters/players/Mike.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/TextOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/TextOutput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/UI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,76 +19,77 @@
     <session id="1167091785">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="TargetSelection" value="1" />
           <entry key="UI" value="1" />
-          <entry key="py" value="120" />
+          <entry key="py" value="126" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="121" />
+          <entry key="Python" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="TargetSelection" value="447" />
           <entry key="dummy" value="80" />
-          <entry key="py" value="24246" />
+          <entry key="py" value="24961" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="80" />
-          <entry key="Python" value="24693" />
+          <entry key="Python" value="25408" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fighters/Fighter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="731">
+              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1536797009781" expanded="true" signature="266:271" ph="..." />
+                <marker date="1536852127334" expanded="true" signature="266:271" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/FireballSpell.py">
+        <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/MeteorSpell.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state>
+              <caret selection-end-line="18" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
-                <marker date="1536796197252" expanded="true" signature="251:727" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/MeteorSpell.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="106" selection-start-line="13" selection-start-column="106" selection-end-line="13" selection-end-column="106" />
+            <state relative-caret-position="170">
+              <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
+                <marker date="1536850135283" expanded="true" signature="245:627" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,10 +98,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BattleTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="119">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle/targetselection/TargetSelection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
+                <marker date="1536790708753" expanded="true" signature="103:124" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle/battleeffect/EffectType.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <marker date="1536850135319" expanded="true" signature="46:51" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle/targetselection/SingleAllyTargetSelection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,48 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battle/targetselection/SingleEnemyTargetSelection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="16" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle/targetselection/AllEnemyTargetSelection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-                <marker date="1536798067466" expanded="true" signature="172:327" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle/battlemenu/AttackOption.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle/battlemenu/MagicOption.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -186,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battle/battleeffect/RegularAttack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="71" lean-forward="true" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+            <state relative-caret-position="238">
+              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -239,7 +218,6 @@
         <option value="$PROJECT_DIR$/battletest.py" />
         <option value="$PROJECT_DIR$/battle/action/BattleAction.py" />
         <option value="$PROJECT_DIR$/battle/action/Action.py" />
-        <option value="$PROJECT_DIR$/battle/battleeffect/EffectType.py" />
         <option value="$PROJECT_DIR$/ui/GameOutput.py" />
         <option value="$PROJECT_DIR$/battle/battleeffect/TargetSelection" />
         <option value="$PROJECT_DIR$/battle/BattleOption.py" />
@@ -254,7 +232,6 @@
         <option value="$PROJECT_DIR$/battle/battlemenu/RunOption.py" />
         <option value="$PROJECT_DIR$/ui/PartyRender.py" />
         <option value="$PROJECT_DIR$/battle/battleeffect/magic/Fireball.py" />
-        <option value="$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py" />
         <option value="$PROJECT_DIR$/fighters/players/Mike.py" />
         <option value="$PROJECT_DIR$/fighters/players/Courtney.py" />
         <option value="$PROJECT_DIR$/fighters/monsters/Kobold.py" />
@@ -264,16 +241,19 @@
         <option value="$PROJECT_DIR$/battle/battleeffect/RegularAttack.py" />
         <option value="$PROJECT_DIR$/battle/Battle.py" />
         <option value="$PROJECT_DIR$/battle/battlemenu/AttackOption.py" />
-        <option value="$PROJECT_DIR$/battle/targetselection/SingleEnemyTargetSelection.py" />
         <option value="$PROJECT_DIR$/battle/battlemenu/BattleMenu.py" />
         <option value="$PROJECT_DIR$/battle/battleeffect/magic/FireballSpell.py" />
         <option value="$PROJECT_DIR$/ui/UI.py" />
         <option value="$PROJECT_DIR$/ui/TextOutput.py" />
         <option value="$PROJECT_DIR$/battle/battlemenu/MagicOption.py" />
-        <option value="$PROJECT_DIR$/fighters/Fighter.py" />
         <option value="$PROJECT_DIR$/battle/targetselection/AllEnemyTargetSelection.py" />
-        <option value="$PROJECT_DIR$/BattleTest.py" />
         <option value="$PROJECT_DIR$/battle/battleeffect/magic/MeteorSpell.py" />
+        <option value="$PROJECT_DIR$/battle/targetselection/SingleEnemyTargetSelection.py" />
+        <option value="$PROJECT_DIR$/battle/targetselection/SingleAllyTargetSelection.py" />
+        <option value="$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py" />
+        <option value="$PROJECT_DIR$/battle/battleeffect/EffectType.py" />
+        <option value="$PROJECT_DIR$/BattleTest.py" />
+        <option value="$PROJECT_DIR$/fighters/Fighter.py" />
       </list>
     </option>
   </component>
@@ -288,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,68 +275,11 @@
               <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="battle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="battle" type="462c0819:PsiDirectoryNode" />
-              <item name="battleeffect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="battle" type="462c0819:PsiDirectoryNode" />
-              <item name="battleeffect" type="462c0819:PsiDirectoryNode" />
-              <item name="magic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="battle" type="462c0819:PsiDirectoryNode" />
-              <item name="battlemenu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="battle" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="battle" type="462c0819:PsiDirectoryNode" />
-              <item name="targetselection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="fighters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="fighters" type="462c0819:PsiDirectoryNode" />
-              <item name="monsters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="fighters" type="462c0819:PsiDirectoryNode" />
-              <item name="players" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonRPG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonRPG" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,15 +347,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17095116" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17287917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" x="1" y="33" width="1596" height="826" id="Run" order="2" type="WINDOWED" weight="0.32884097" />
-      <window_info active="true" anchor="bottom" x="1" y="31" width="798" height="828" id="Debug" order="3" type="WINDOWED" visible="true" weight="0.3983629" />
+      <window_info anchor="bottom" x="1" y="31" width="798" height="828" id="Debug" order="3" type="WINDOWED" weight="0.3983629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -495,9 +416,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/Input.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/Input.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/tix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -554,10 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
-          <folding>
-            <marker date="1536789399519" expanded="true" signature="166:171" ph="..." />
-            <marker date="1536789399519" expanded="true" signature="592:594" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,11 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <marker date="1536784401800" expanded="false" signature="71:72" ph="..." />
-            <marker date="1536784401800" expanded="true" signature="141:204" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,16 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle/battleeffect/EffectType.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <marker date="1535940096719" expanded="true" signature="46:51" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battle/battleeffect/RunAction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -601,27 +501,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle/targetselection/TargetSelection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <marker date="1536790708753" expanded="true" signature="103:124" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battle/round/Round.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,9 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-          <folding>
-            <marker date="1536730182647" expanded="true" signature="105:110" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,9 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,12 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-            <marker date="1536795865790" expanded="true" signature="302:307" ph="..." />
-            <marker date="1536795865790" expanded="true" signature="1215:1221" ph="..." />
-            <marker date="1536795865790" expanded="true" signature="1523:1816" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -687,9 +558,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/FireballSpell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle/targetselection/AllEnemyTargetSelection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+            <marker date="1536798067466" expanded="true" signature="172:327" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/battle/battlemenu/AttackOption.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="204">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
@@ -697,12 +589,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/battle/battleeffect/RegularAttack.py">
+    <entry file="file://$PROJECT_DIR$/battle/battlemenu/MagicOption.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="71" lean-forward="true" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        <state relative-caret-position="272">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,75 +609,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fighters/Fighter.py">
+    <entry file="file://$PROJECT_DIR$/battle/battleeffect/RegularAttack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1536797009781" expanded="true" signature="266:271" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/FireballSpell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="238">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
-            <marker date="1536796197252" expanded="true" signature="251:727" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle/targetselection/SingleEnemyTargetSelection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle/targetselection/AllEnemyTargetSelection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-            <marker date="1536798067466" expanded="true" signature="172:327" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle/battlemenu/MagicOption.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BattleTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/MeteorSpell.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="106" selection-start-line="13" selection-start-column="106" selection-end-line="13" selection-end-column="106" />
+        <state>
+          <caret selection-end-line="18" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle/targetselection/SingleEnemyTargetSelection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle/targetselection/SingleAllyTargetSelection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle/battleeffect/magic/HealSpell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+            <marker date="1536850135283" expanded="true" signature="245:627" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle/targetselection/TargetSelection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <marker date="1536790708753" expanded="true" signature="103:124" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle/battleeffect/EffectType.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1536850135319" expanded="true" signature="46:51" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BattleTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fighters/Fighter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <marker date="1536852127334" expanded="true" signature="266:271" ph="..." />
           </folding>
         </state>
       </provider>
